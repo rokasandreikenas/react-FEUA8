@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Welcome(props) {
   return (
     <div>
@@ -8,5 +10,10 @@ function Welcome(props) {
     </div>
   );
 }
+
+Welcome.propTypes = {
+  name: PropTypes.string,
+  surname: PropTypes.string,
+};
 
 export default Welcome;
