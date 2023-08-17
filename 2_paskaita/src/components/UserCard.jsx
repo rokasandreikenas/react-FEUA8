@@ -16,4 +16,8 @@ UserCard.propTypes = {
   height: PropTypes.number,
 };
 
+UserCard.defaultProps = {
+  height: 0,
+};
+
 export default UserCard;
