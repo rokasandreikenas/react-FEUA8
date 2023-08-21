@@ -11,3 +11,5 @@
 - 1rem = 18px (root level font-size 18px), 2rem = 34px, 1.5rem = 26px
 - em (parent level font-size)
 - props can be optional or required
+- .map() is used for iterating elements
+- when iterating elements with map key is required and should be unique
