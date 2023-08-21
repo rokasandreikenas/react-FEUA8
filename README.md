@@ -1,6 +1,6 @@
 ## React introduction
 
-- npm create vite@latest - sukuria naują projektą
+- npm create vite@latest arba yarn create vite - sukuria naują projektą
 - cd "folder" - pereina į kitą folderį
 - cd .. - grįžta atgal
 - ls - atvaizduoja failus folderyje
