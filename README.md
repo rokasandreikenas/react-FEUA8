@@ -13,3 +13,7 @@
 - props can be optional or required
 - .map() is used for iterating elements
 - when iterating elements with map key is required and should be unique
+- import {useState} from 'react'; - importuojam iš react bibliotekos
+- const [count, setCount] = useState(1); - priskiriam naują state ir pradinę reikšmę 1
+- onClick - click hanlderis - paspaudimas ant elemento
+- setState iškvietimas padaro rerender, kuris atnaujiną informaciją
