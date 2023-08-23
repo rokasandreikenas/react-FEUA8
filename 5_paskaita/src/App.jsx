@@ -19,17 +19,31 @@ const App = () => {
       });
   }, []);
 
+  const handleCompleteTodo = (todo) => {
+    // per data kintąmąjį darom map (ciklą)
+    // tikrinam ar ateinančio todo.id sutampa su ciklo item.id
+    // jeigu sutampa - grąžinam atnaujintą elementą
+    // kitu atveju grąžinam ciklo itemą
+    const updatedData = data.map((item) =>
+      item.id === todo.id ? { ...item, completed: true } : item
+    );
+
+    setData(updatedData);
+  };
+
   return (
     <div>
       {name} {age}
       <br />
       <button onClick={() => setName("Default")}>Set default name</button>
       {data.map((item) => (
-        <div key={item.id}>
-          <h2 style={{ backgroundColor: item.completed ? "green" : "yellow" }}>
-            {item.title}
-          </h2>
-        </div>
+        <h2
+          key={item.id}
+          style={{ backgroundColor: item.completed ? "green" : "yellow" }}
+          onClick={() => handleCompleteTodo(item)}
+        >
+          {item.title}
+        </h2>
       ))}
     </div>
   );
