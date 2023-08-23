@@ -17,3 +17,7 @@
 - const [count, setCount] = useState(1); - priskiriam naują state ir pradinę reikšmę 1
 - onClick - click hanlderis - paspaudimas ant elemento
 - setState iškvietimas padaro rerender, kuris atnaujiną informaciją
+- useEffect - pirmas argumentas callback funkcija () => {}, antras argumentas dependancy array []
+- 1 būsena. Kai dependancy masyvas yra tuščias useEffect suveiks tik vieną kartą. Dažniausiai naudojama duomenų gavimui
+- 2 būsena. Kai dependancy masyvas yra papildytas tam tikrais parametrais, suveikia kai parametrų reikšmė pakinta
+- 3 būsena. Kai nėra dependancy masyvo. Suveikia ant kiekvieno rerenderio pvz. kai pakinta bet koks state
