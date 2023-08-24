@@ -4,7 +4,7 @@ import Products from "./components/Products";
 const App = () => {
   return (
     <div>
-      {/* <Products /> */}
+      <Products />
       <Inputs />
     </div>
   );
