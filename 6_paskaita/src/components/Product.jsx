@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./Product.css";
+import "./styles.css";
 
 const Product = ({ product, handleDeleteProduct }) => {
   return (

@@ -21,3 +21,7 @@
 - 1 būsena. Kai dependancy masyvas yra tuščias useEffect suveiks tik vieną kartą. Dažniausiai naudojama duomenų gavimui
 - 2 būsena. Kai dependancy masyvas yra papildytas tam tikrais parametrais, suveikia kai parametrų reikšmė pakinta
 - 3 būsena. Kai nėra dependancy masyvo. Suveikia ant kiekvieno rerenderio pvz. kai pakinta bet koks state
+- input onChange handleris iškviečiamas kas kartą, kai rašau tekstą (char)
+- onChange={(e) => setName(e.target.value)} - e (eventas); e.target.value (reikšmė)
+- input reikalingi value ir onChange parametrai
+- form naudojama event.preventDefault(); kad išvengti page refresh
