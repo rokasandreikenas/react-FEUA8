@@ -27,3 +27,5 @@
 - form naudojama event.preventDefault(); kad išvengti page refresh
 - git repozitorijoje spaudžia "Code" ir kopijuojam linką
 - atsidarom terminalą ir savo norimam folderyje rašome 'git clone https://github.com/rokasandreikenas/react-FEUA8.git' (sukeičiat repozitorijos linką su savo)
+- instaliuojam "react-router-dom"; importuojam ir panaudojam "BrowserRouter" main.jsx faile
+- <Routes> <Route path="/" element={<Home/>} /> </Routes>
