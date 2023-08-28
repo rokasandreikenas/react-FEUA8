@@ -25,3 +25,5 @@
 - onChange={(e) => setName(e.target.value)} - e (eventas); e.target.value (reikšmė)
 - input reikalingi value ir onChange parametrai
 - form naudojama event.preventDefault(); kad išvengti page refresh
+- git repozitorijoje spaudžia "Code" ir kopijuojam linką
+- atsidarom terminalą ir savo norimam folderyje rašome 'git clone https://github.com/rokasandreikenas/react-FEUA8.git' (sukeičiat repozitorijos linką su savo)
