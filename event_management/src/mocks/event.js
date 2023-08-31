@@ -1,4 +1,4 @@
-export const mockEvent = {
+const mockEvent = {
   id: 1,
   title: "Fake event",
   description:
@@ -15,7 +15,7 @@ export const mockEvent = {
     "https://img.bizbash.com/files/base/bizbash/bzb/image/2018/07/2018_06_09_pg_groupnine_bestdogdayever_ca_142.png?auto=format%2Ccompress&q=70&w=400",
 };
 
-export const mockEvent2 = {
+const mockEvent2 = {
   id: 2,
   title: "Fake cat event",
   description:
@@ -31,3 +31,5 @@ export const mockEvent2 = {
   imageUrl:
     "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F477315689%2F1059305250613%2F1%2Foriginal.20230324-213413?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=47e9a518a18362f9157b14da0b6b5da4",
 };
+
+export const mockEvents = [mockEvent, mockEvent2];
