@@ -31,3 +31,5 @@
 - <Routes> <Route path="/" element={<Home/>} /> </Routes>
 - createContext sukūrimui / useContext ištraukimui
 - Provider užwrappint aplikaciją pvz. App.jsx faile
+- useCallback returns a memoized callback function
+- useMemo returns a memoized value
