@@ -1,13 +1,15 @@
 import FormikTodo from "./FormikTodo";
 import FormikValidate from "./FormikValidate";
 import FormikYup from "./FormikYup";
+import Todos from "./Todos";
 
 const App = () => {
   return (
     <div>
-      <FormikTodo />
+      <Todos />
+      {/* <FormikTodo />
       <FormikValidate />
-      <FormikYup />
+      <FormikYup /> */}
     </div>
   );
 };

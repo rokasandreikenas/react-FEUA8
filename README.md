@@ -33,3 +33,5 @@
 - Provider užwrappint aplikaciją pvz. App.jsx faile
 - useCallback returns a memoized callback function
 - useMemo returns a memoized value
+- package.json scripts dalyje "server": "json-server --watch db.json"
+- vienam terminale "yarn server", kitam "yarn dev"
