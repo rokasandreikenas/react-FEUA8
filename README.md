@@ -34,4 +34,4 @@
 - useCallback returns a memoized callback function
 - useMemo returns a memoized value
 - package.json scripts dalyje "server": "json-server --watch db.json"
-- vienam terminale "yarn server", kitam "yarn dev"
+- vienam terminale "yarn server", kitam "yarn dev" arba "npm run server" ir "npm run dev"
