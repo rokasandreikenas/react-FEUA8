@@ -44,7 +44,7 @@ const Price = styled.p`
   text-align: right;
 `;
 
-const Ad = ({ ad, handleDelete }) => {
+const AdCard = ({ ad, handleEdit, handleDelete }) => {
   const { title, description, imageUrl, price } = ad;
   const { user } = useContext(UserContext);
 
@@ -60,7 +60,9 @@ const Ad = ({ ad, handleDelete }) => {
       <Actions>
         {user && user.id === ad.userId && (
           <>
-            <Button primary>Edit</Button>
+            <Button primary onClick={handleEdit}>
+              Edit
+            </Button>
             <Button secondary onClick={handleDelete}>
               Delete
             </Button>
@@ -72,7 +74,7 @@ const Ad = ({ ad, handleDelete }) => {
   );
 };
 
-Ad.propTypes = {
+AdCard.propTypes = {
   ad: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
@@ -80,8 +82,9 @@ Ad.propTypes = {
     imageUrl: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     userId: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
+  handleEdit: PropTypes.func.isRequired,
   handleDelete: PropTypes.func.isRequired,
 };
 
-export default Ad;
+export default AdCard;
