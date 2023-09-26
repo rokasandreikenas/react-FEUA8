@@ -1,10 +1,5 @@
-import "./primitives";
-import { locations } from "./typed-object";
-
 const App = () => {
-  const test = "";
-
-  return <div></div>;
+  return <div>Test</div>;
 };
 
 export default App;
